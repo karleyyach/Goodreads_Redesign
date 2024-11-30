@@ -1,0 +1,142 @@
+#menu {
+    box-shadow: 0 0 5px -2px gray;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#menu .search {
+    max-width: 250px;
+    min-width: 100px;
+}
+
+
+#menu #searchQueryInput {
+    width: 100%;
+    height: 2.3rem;
+    background: white;
+    outline: none;
+    border: none;
+    border-radius: 1.625rem;
+    padding: 0 3.5rem 0 1.5rem;
+    font-size: 1rem;
+}
+
+#menu #searchQuerySubmit {
+    width: 3.5rem;
+    height: 2.3rem;
+    margin-left: -3.5rem;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.items p {
+    border: 1px solid #B8BBC2;
+    padding: 5px 12px;
+    
+}
+
+.book {
+    max-width: 210px;
+    line-height: 1.6;
+}
+
+.row {
+    gap: 10px;
+}
+
+.book-info p{
+    margin: 0;
+}
+
+.book-info h2{
+    margin: 0;
+}
+
+.book-info rating{
+    margin: 0;
+}
+
+
+.menu-bottom {
+    border-top: 1px;
+    border-color: #D9D9D9;
+    border-style: solid;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    padding-top: 40px;
+    padding-bottom: 70px;
+    align-items: center;
+    
+
+}
+
+.page-dropdown {
+    border: 1px solid #B8BBC2;
+    padding: 5px 12px;
+    padding-left: 100px;
+    margin-left: 20px;
+    background-color: white;
+}
+
+#footer {
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+}
+
+@media screen and (max-width: 768px) and (min-width: 481px) {
+    #main-body {
+        display: block;
+        margin:auto;
+
+    }
+    #rows {
+        margin-left: 24px;
+        margin-right: 24px;
+        max-width: none;
+        justify-content: center;
+        background-color: yellow;
+
+    }
+
+    .book {
+        background-color: blue;
+    }
+
+    .row {
+
+        display: block;
+        margin:auto;
+        justify-content: center;
+
+
+    }
+
+    .book {
+        margin-bottom: 30px;
+    }
+
+    .page-dropdown {
+        padding-left: 50px;
+    }
+
+
+    #menu .search {
+        max-width: 180px;
+        min-width: 100px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    #footer {
+        padding: 40px 24px 40px 24px;
+    }
+
+}

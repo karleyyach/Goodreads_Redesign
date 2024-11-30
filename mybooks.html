@@ -3,11 +3,12 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Goodreads - Home</title>
+    <title>Goodreads - Profile</title>
 
 
     <link rel="stylesheet" type="text/css" href="styles/normalize.css">
     <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <link rel="stylesheet" type="text/css" href="styles/mybooks.css">
 
 
     <!--fonts-->
@@ -24,7 +25,6 @@
 
 <body>
     <header>
-
         <nav class="padding-80 hidden-mobile">
                     
             <!-- logo-->
@@ -108,293 +108,212 @@
 
         </nav>
 
-        
-        
     </header>
 
+    <section id="main-body" class="content-gap">
+        <section id="rows">
+            <section id="menu" class="flex-row-top">
+                <p>SORT BY</p>
+                <div class="items flex-row-top">
+                    <p>Shelf 🞃</p>
+                    <p class="hidden-mobile">Genre 🞃</p>
+                    <p class="hidden-mobile">Year 🞃</p>
+                    <p class="hidden-mobile">Rating 🞃</p>
+                    <p class="hidden-mobile">My Rating 🞃</p>
+                </div>
+                <p>Edit</p>
+                <p class="hidden-mobile">Change View</p>
 
-    <!--news banner-->
-    <section id="main-body">
-        <section>
-            <div id="banner" class="padding-default content-gap hidden-mobile">
-                <button type="button">Discover the top horror books of the last 5 years</button>
+                <div class="search">
+                    <div class="searchBar">
+                        <input id="searchQueryInput" type="text" name="searchQueryInput" placeholder="Search" value="" />
+                        <button id="searchQuerySubmit" type="submit" name="searchQuerySubmit">
+                            <svg style="width:24px;height:24px" viewBox="0 0 24 24"><path fill="#666666" d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="flex-row-top content-gap row"><!--row 1-->
+                <div class="book">
+                    <img src="images/mybooks1-prescribecat.png">
+                    <div class="book-info">
+                        <h2>We'll Prescribe You a Cat</h2>
+                        <p class="p-lato">Syou Ishida</p>
+                        <div class="rating">
+                            <img src="images/star.svg">
+                            <p class="p-lato">3.85</p>
+                        </div>
+                        <p class="p-lato">Shelf: To Read</p>
+                        <p class="p-lato">My Rating:</p>
+                    </div>
+                </div>
+                <div class="book">
+                    <img src="images/mybooks2-kafka.png">
+                    <div class="book-info">
+                        <h2>Kafka on the Shore</h2>
+                        <p class="p-lato">Haruki Murakami</p>
+                        <div class="rating">
+                            <img src="images/star.svg">
+                            <p class="p-lato">4.13</p>
+                        </div>
+                        <p class="p-lato">Shelf: Read</p>
+                        <p class="p-lato">My Rating: 3.5</p>
+                    </div>
+                </div>
+                <div class="book">
+                    <img src="images/mybooks3-certainhunger.png">
+                    <div class="book-info">
+                        <h2>A Certain Hunger</h2>
+                        <p class="p-lato">Chelsea G. Summers</p>
+                        <div class="rating">
+                            <img src="images/star.svg">
+                            <p class="p-lato">3.76</p>
+                        </div>
+                        <p class="p-lato">Shelf: Read</p>
+                        <p class="p-lato">My Rating: 3.0</p>
+                    </div>
+                </div>
+                <div class="book">
+                    <img src="images/mybooks4-lapvona.png">
+                    <div class="book-info">
+                        <h2>Lapvona</h2>
+                        <p class="p-lato">Ottessa Moshfegh</p>
+                        <div class="rating">
+                            <img src="images/star.svg">
+                            <p class="p-lato">3.53</p>
+                        </div>
+                        <p class="p-lato">Shelf: To Read</p>
+                        <p class="p-lato">My Rating:</p>
+                    </div>
+                </div>
+        
+            </section>
+
+            <section class="flex-row-top content-gap row">
+                <div class="book">
+                    <img src="images/mybooks5-cleo.png">
+                    <div class="book-info">
+                        <h2>Cleopatra and Frankenstein</h2>
+                        <p class="p-lato">Coco Mellors</p>
+                        <div class="rating">
+                            <img src="images/star.svg">
+                            <p class="p-lato">3.73</p>
+                        </div>
+                        <p class="p-lato">Shelf: To Read</p>
+                        <p class="p-lato">My Rating:</p>
+                    </div>
+                </div>
+                <div class="book">
+                    <img src="images/mybooks6-gonegirl.png">
+                    <div class="book-info">
+                        <h2>Gone Girl</h2>
+                        <p class="p-lato">Gillian Flynn</p>
+                        <div class="rating">
+                            <img src="images/star.svg">
+                            <p class="p-lato">4.14</p>
+                        </div>
+                        <p class="p-lato">Shelf: Read</p>
+                        <p class="p-lato">My Rating: 4.0</p>
+                    </div>
+                </div>
+                <div class="book">
+                    <img src="images/mybooks7-intermezzo.png">
+                    <div class="book-info">
+                        <h2>Intermezzo</h2>
+                        <p class="p-lato">Sally Rooney</p>
+                        <div class="rating">
+                            <img src="images/star.svg">
+                            <p class="p-lato">4.11</p>
+                        </div>
+                        <p class="p-lato">Shelf: Currently Reading</p>
+                        <p class="p-lato">My Rating:</p>
+                    </div>
+                </div>
+                <div class="book">
+                    <img src="images/mybooks8-ladymacbeth.png">
+                    <div class="book-info">
+                        <h2>Lady Macbeth</h2>
+                        <p class="p-lato">Ava Reid</p>
+                        <div class="rating">
+                            <img src="images/star.svg">
+                            <p class="p-lato">3.51</p>
+                        </div>
+                        <p class="p-lato">Shelf: To Read</p>
+                        <p class="p-lato">My Rating:</p>
+                    </div>
+                </div>
+
+            </section>
+            <section class="flex-row-top content-gap row">
+                <div class="book">
+                    <img src="images/mybooks9-graveyard.png">
+                    <div class="book-info">
+                        <h2>Graveyard Shift</h2>
+                        <p class="p-lato">M. L. Rio</p>
+                        <div class="rating">
+                            <img src="images/star.svg">
+                            <p class="p-lato">3.27</p>
+                        </div>
+                        <p class="p-lato">Shelf: To Read</p>
+                        <p class="p-lato">My Rating:</p>
+                    </div>
+                </div>
+                <div class="book">
+                    <img src="images/mybooks10-darkvanessa.png">
+                    <div class="book-info">
+                        <h2>My Dark Venessa</h2>
+                        <p class="p-lato">Kate Elizabeth Russell</p>
+                        <div class="rating">
+                            <img src="images/star.svg">
+                            <p class="p-lato">4.10</p>
+                        </div>
+                        <p class="p-lato">Shelf: Read</p>
+                        <p class="p-lato">My Rating: 4.0</p>
+                    </div>
+                </div>
+                <div class="book">
+                    <img src="images/mybooks11-sixdeaths.png">
+                    <div class="book-info">
+                        <h2>The Six Deaths of the Saint</h2>
+                        <p class="p-lato">Alix E. Harrow</p>
+                        <div class="rating">
+                            <img src="images/star.svg">
+                            <p class="p-lato">4.33</p>
+                        </div>
+                        <p class="p-lato">Shelf: To Read</p>
+                        <p class="p-lato">My Rating:</p>
+                    </div>
+                </div>
+                <div class="book">
+                    <img src="images/mybooks12-whitenights.png">
+                    <div class="book-info">
+                        <h2>White Nights</h2>
+                        <p class="p-lato">Fyodor Dostoevsky</p>
+                        <div class="rating">
+                            <img src="images/star.svg">
+                            <p class="p-lato">4.07</p>
+                        </div>
+                        <p class="p-lato">Shelf: Read</p>
+                        <p class="p-lato">My Rating: 3.5</p>
+                    </div>
+                </div>
+            </section>
+
+            <div class="menu-bottom flex-row-top">
+                <div class="flex-row-top">
+                    <p>Per page</p>
+                    <p class="page-dropdown">12 🞃</p>
+
+                </div>
+                <p>< previous 1 2 3 4 ... 21 22 next ></previous></p>
+
             </div>
+
         </section>
 
-        <!--main section up to 'updates from friends'-->
-        <!--unsure of how else to section this considering overlaps-->
-        <div class="padding-default main-grid">
-
-            <!--left sections-->
-            <div class="grid1 col-gap">
-
-
-                <section id="rec" class="content-gap">
-                    <div class="flex-row-top">
-                        <h1>Recommended For You</h1>
-                        <h3>See More</h3>
-                    </div>
-                    <div class="flex-row-top book-list">
-                        <div class="book"> 
-                            <img src="images/rec1-dune.png">
-                            <h2 class="hidden-mobile">Dune</h2>
-                            <p class="p-lato hidden-mobile">Frank Herbert</p>
-                            <div class="rating hidden-mobile">
-                                <img src="images/star.svg">
-                                <p class="p-lato">4.28</p>
-                            </div>
-                        </div>
-                        <div class="book"> 
-                            <img src="images/rec2-themartian.png">
-                            <h2 class="hidden-mobile">The Martian</h2>
-                            <p class="p-lato hidden-mobile">Andy Weir</p>
-                            <div class="rating hidden-mobile">
-                                <img src="images/star.svg">
-                                <p class="p-lato">4.42</p>
-                            </div>
-                        </div>
-                        <div class="book"> 
-                            <img src="images/rec3-bunny.png">
-                            <h2 class="hidden-mobile">Bunny</h2>
-                            <p class="p-lato hidden-mobile">Mona Awad</p>
-                            <div class="rating hidden-mobile">
-                                <img src="images/star.svg">
-                                <p class="p-lato">3.50</p>
-                            </div>
-
-                        </div>
-                        <div class="book"> 
-                            <img src="images/rec4-alittlelife.png">
-                            <h2 class="hidden-mobile">A Little Life</h2>
-                            <p class="p-lato hidden-mobile">Hanya Yangihara</p>
-                            <div class="rating hidden-mobile">
-                                <img src="images/star.svg">
-                                <p class="p-lato">4.32</p>
-                            </div>
-                        </div>
-
-                    </div>
-
-                </section>
-
-
-                <section id="news-interviews" class="content-gap"> <!--news & interviews-->
-                    <div class="flex-row-top">
-                        <h1>News & Interviews</h1>
-                        <h3>See More</h3>
-                    </div>
-                    <!--content-->
-                    <div class="col-gap">
-                        <div class="content-box flex-row-top">
-                            <img src="images/news1.png">
-                            <div>
-                                <h2>Eight Beloved Books from Each of the Past 10 Years</h2>
-                                <p class="p-merri hidden-desktop">Here at Goodreads World Headquarters... Read more</p>
-                                <p class="p-merri hidden-mobile">Here at Goodreads World Headquarters, we spend a lot of time sorting books into stacks. It’s fun, if a little hard on the back. The key is to lift with your legs... Read more</p>
-                            </div>
-                        </div>
-                        <div class="spacing"></div>
-                        <div class="content-box flex-row-top">
-                            <img src="images/news2.png">
-                            <div>
-                                <h2>The Biggest Book-to-Screen Adaptations of 2024</h2>
-                                <p class="p-merri hidden-desktop">With the advent of streaming services... Read more</p>
-                                <p class="p-merri hidden-mobile">With the advent of streaming services like Netflix, Hulu, Amazon Prime, and Apple TV+ we’re currently experiencing a kind of Golden Age for book-to-screen... Read more</p>
-                            </div>
-                        </div>
-                    </div>
-
-                </section>
-
-
-
-
-
-                <section id="pop" class="content-gap">
-                    <div class="flex-row-top">
-                        <h1>Popular This Week</h1>
-                        <h3>See More</h3>
-                    </div>
-                    <div class="flex-row-top book-list">
-                        <div class="book"> 
-                            <img src="images/pop1-mistborn.png">
-                            <h2 class="hidden-mobile">Mistborn: The Final Empire</h2>
-                            <p class="p-lato hidden-mobile">Brandon Sander..</p>
-                            <div class="rating hidden-mobile">
-                                <svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M11 0L14.7391 6.4432L22 8.02129L17.05 13.5815L17.7984 21L11 17.9932L4.20163 21L4.95 13.5815L0 8.02129L7.26089 6.4432L11 0Z" fill="#6E5942"/>
-                                </svg>
-                                <p class="p-lato">4.48</p>
-                            </div>
-                        </div>
-                        <div class="book"> 
-                            <img src="images/pop2-thebookthief.png">
-                            <h2 class="hidden-mobile">The Book Thief</h2>
-                            <p class="p-lato hidden-mobile">Markus Zusak</p>
-                            <div class="rating hidden-mobile">
-                                <svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M11 0L14.7391 6.4432L22 8.02129L17.05 13.5815L17.7984 21L11 17.9932L4.20163 21L4.95 13.5815L0 8.02129L7.26089 6.4432L11 0Z" fill="#6E5942"/>
-                                </svg>
-                                <p class="p-lato">4.48</p>
-                            </div>
-                        </div>
-                        <div class="book"> 
-                            <img src="images/pop3-hillhouse.png">
-                            <h2 class="hidden-mobile">The Haunting of Hill House</h2>
-                            <p class="p-lato hidden-mobile">Shirley Jackson</p>
-                            <div class="rating hidden-mobile">
-                                <svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M11 0L14.7391 6.4432L22 8.02129L17.05 13.5815L17.7984 21L11 17.9932L4.20163 21L4.95 13.5815L0 8.02129L7.26089 6.4432L11 0Z" fill="#6E5942"/>
-                                </svg>
-                                <p class="p-lato">4.48</p>
-                            </div>
-                        </div>
-                        <div class="book"> 
-                            <img src="images/pop4-funnystory.png">
-                            <h2 class="hidden-mobile">Funny Story</h2>
-                            <p class="p-lato hidden-mobile">Emily Henry</p>
-                            <div class="rating hidden-mobile">
-                                <svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M11 0L14.7391 6.4432L22 8.02129L17.05 13.5815L17.7984 21L11 17.9932L4.20163 21L4.95 13.5815L0 8.02129L7.26089 6.4432L11 0Z" fill="#6E5942"/>
-                                </svg>
-                                <p class="p-lato">4.48</p>
-                            </div>
-                        </div>
-
-                    </div>
-
-                </section>
-
-
-
-
-
-                <section id="updates" class="content-gap">
-                    <div class="flex-row-top">
-                        <h1>Updates From Friends</h1>
-                        <h3>See More</h3>
-                    </div>
-                    <div class="col-gap">
-                        <div class="content-box flex-row-top">
-                            <div class="rating">
-                                <p class="p-merri"><b>John</b> rated <i>The Midnight Library</i></p>
-
-                                <svg width="111" height="21" viewBox="0 0 111 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M11 0L14.7391 6.4432L22 8.02129L17.05 13.5815L17.7984 21L11 17.9932L4.20163 21L4.95 13.5815L0 8.02129L7.26089 6.4432L11 0Z" fill="#6E5942"/>
-                                    <path d="M36 0L39.7391 6.4432L47 8.02129L42.05 13.5815L42.7984 21L36 17.9932L29.2016 21L29.95 13.5815L25 8.02129L32.2609 6.4432L36 0Z" fill="#6E5942"/>
-                                    <path d="M61 0L64.7391 6.4432L72 8.02129L67.05 13.5815L67.7984 21L61 17.9932L54.2016 21L54.95 13.5815L50 8.02129L57.2609 6.4432L61 0Z" fill="#6E5942"/>
-                                    <path d="M86 0L89.7391 6.4432L97 8.02129L92.05 13.5815L92.7984 21L86 17.9932L79.2016 21L79.95 13.5815L75 8.02129L82.2609 6.4432L86 0Z" fill="#F2F2F2"/>
-                                    <path d="M79.2016 21L86 17.9932V0L82.2609 6.4432L75 8.02128L79.95 13.5815L79.2016 21Z" fill="#6E5942"/>
-                                    <path d="M100 0L103.739 6.4432L111 8.02129L106.05 13.5815L106.798 21L100 17.9932L93.2016 21L93.95 13.5815L89 8.02129L96.2609 6.4432L100 0Z" fill="#F2F2F2"/>
-                                </svg>
-                            </div>
-
-                            <h3>Oct 30, 2024</h3>
-
-                        </div>
-                        <div class="content-box flex-row-top">
-                            <p class="p-merri"><b>Sara</b> started reading <i>I'm Glad My Mom Died</i></p>
-
-                            <h3>Oct 28, 2024</h3>
-
-                        </div>
-                        <div class="content-box flex-row-top">
-                            <p class="p-merri"><b>John</b> is on page 105 of 288 (36%) of <i>The Midnight Library</i></p>
-
-                            <h3>Oct 27, 2024</h3>
-
-                        </div>
-                        <div class="content-box flex-row-top">
-                            <p class="p-merri"><b>John</b> started reading <i>The Midnight Library</i></p>
-
-                            <h3>Oct 22, 2024</h3>
-
-                        </div>
-                        <div class="content-box flex-row-top">
-                            <div class="rating">
-                                <p class="p-merri"><b>Sara</b> rated <i>Malibu Rising</i></p>
-
-                                <svg width="122" height="21" viewBox="0 0 122 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M11 0L14.7391 6.4432L22 8.02129L17.05 13.5815L17.7984 21L11 17.9932L4.20163 21L4.95 13.5815L0 8.02129L7.26089 6.4432L11 0Z" fill="#6E5942"/>
-                                    <path d="M36 0L39.7391 6.4432L47 8.02129L42.05 13.5815L42.7984 21L36 17.9932L29.2016 21L29.95 13.5815L25 8.02129L32.2609 6.4432L36 0Z" fill="#6E5942"/>
-                                    <path d="M61 0L64.7391 6.4432L72 8.02129L67.05 13.5815L67.7984 21L61 17.9932L54.2016 21L54.95 13.5815L50 8.02129L57.2609 6.4432L61 0Z" fill="#6E5942"/>
-                                    <path d="M86 0L89.7391 6.4432L97 8.02129L92.05 13.5815L92.7984 21L86 17.9932L79.2016 21L79.95 13.5815L75 8.02129L82.2609 6.4432L86 0Z" fill="#6E5942"/>
-                                    <path d="M111 0L114.739 6.4432L122 8.02129L117.05 13.5815L117.798 21L111 17.9932L104.202 21L104.95 13.5815L100 8.02129L107.261 6.4432L111 0Z" fill="#F2F2F2"/>
-                                </svg>
-                            </div>
-
-                            <h3>Oct 17, 2024</h3>
-
-                        </div>
-                    </div>
-                </section>
-            </div>
-
-            <!--right col-->
-            <div class="grid2 hidden-mobile"> <!--toggle to not show once smaller than a certain size-->
-
-                <section id="cur" class="content-gap"> <!--currently reading-->
-                    <h1>Currently Reading</h1>
-                    <div class="flex-row-top">
-                        <img src="images/currreading1-intermezzo.png">
-                        <div>
-                            <h2>Intermezzo</h2>
-                            <p class="p-merri">By Sally Rooney</p>
-                            <div class="progress-bar"">
-                                <svg width="95" height="8" viewBox="0 0 95 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <rect x="30.1522" width="64.8478" height="8" rx="4" fill="#D9D9D9"/>
-                                    <rect width="78.0652" height="8" rx="4" fill="#927F64"/>
-                                </svg>
-                                <p class="p-merri">78%</p>
-            
-                            </div>
-                            <button type="button">Update Progress</button>
-                        </div>
-                    </div>
-
-                </section>
-
-                <section id="challenge" class="content-gap">
-                    <h1>2024 Reading Challenge</h1>
-
-                    <div class="flex-row-top">
-                        <img src="images/challenge.png">
-                        <div>
-                            <h2 id="num-text">63 of 100</h2>
-                            <p class="p-merri">books read</p>
-                            <h3>View</h3>
-                        </div>
-                    </div>
-
-                    <div class="progress-bar"">
-                        <svg style="max-width: 200" width="218" height="8" viewBox="0 0 218 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect width="218" height="8" rx="4" fill="#D9D9D9"/>
-                            <rect width="139.33" height="8" rx="4" fill="#927F64"/>
-                        </svg>
-                        <p class="p-merri">63%</p>
-
-                    </div>
-                    <p class="p-merri">4 books behind schedule</p>
-
-                </section>
-
-                <section class="content-gap">
-                    <h1>Choice Awards 2023</h1>
-                    <div class="flex-row-top">
-                        <img src="images/2023awards.png">
-
-                    </div>
-                </section>
-
-                <section>
-                    <h1>Your Shelves</h1>
-                    <p>Want to Read (201)</p>
-                    <p>Currently Reading (1)</p>
-                    <p>Read (89)</p>
-                </section>
-            </div>
-
-        </div>
     </section>
 
     <!--footer-->
@@ -447,6 +366,5 @@
     </section>
 
 
-</body>
 
-</html>
+</body>
