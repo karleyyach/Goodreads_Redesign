@@ -48,17 +48,6 @@
     gap: 10px;
 }
 
-.book-info p{
-    margin: 0;
-}
-
-.book-info h2{
-    margin: 0;
-}
-
-.book-info rating{
-    margin: 0;
-}
 
 
 .menu-bottom {
@@ -84,17 +73,13 @@
 }
 
 #footer {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding: 40px 175px 40px 175px;
 
 }
 
 @media screen and (max-width: 768px) and (min-width: 481px) {
-    #main-body {
-        display: block;
-        margin:auto;
 
-    }
+    
     #rows {
         margin-left: 24px;
         margin-right: 24px;
@@ -121,6 +106,10 @@
         margin-bottom: 30px;
     }
 
+    .book h1 {
+        font-size: 20px;
+    }
+
     .page-dropdown {
         padding-left: 50px;
     }
@@ -131,12 +120,8 @@
         min-width: 100px;
     }
 
-    h1 {
-        font-size: 20px;
-    }
-
     #footer {
-        padding: 40px 24px 40px 24px;
+        padding: 24px;
     }
 
 }
