@@ -8,11 +8,15 @@
 
 #profile-info img {
     border-radius: 100px;
+    max-width: 175px;
+    max-height: 175px;
 
 }
 
-#profile-into .flex-row-top {
-    gap:30px;
+
+#profile-info .flex-row-top {
+    gap:20px;
+    align-items: end;
 }
 
 #profile-info h2 {
@@ -32,4 +36,21 @@
     background-color: blueviolet;
     margin:0;
     line-height: 2.2;
+}
+
+#p-cur img {
+    width: 100%;
+    height: auto;
+    max-width: 154px;
+}
+
+#friends {
+    overflow: hidden;
+}
+#friends img {
+    padding-bottom: 15px;
+}
+
+#friends .no-padding img {
+    padding-bottom: 0;
 }
