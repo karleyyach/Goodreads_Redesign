@@ -2,7 +2,6 @@
     padding-top: 40px;
     margin-bottom: 40px;
     border-radius: 10px;
-
     box-shadow: 0px 15px 10px -15px gray;
 }
 
@@ -17,14 +16,39 @@
 #profile-info .flex-row-top {
     gap:20px;
     align-items: end;
+
 }
+
+#profile-info svg {
+    position: relative;
+    bottom: 17px;
+}
+
 
 #profile-info h2 {
     font-size: 25px;
+    position: relative;
+    top: 12px;
 }
+
+.flex-row-top .stats{
+    text-align: center;
+    vertical-align: bottom;
+}
+
+.stats p {
+
+    line-height: 1;
+}
+
+
 
 #profile-info p {
     font-size: 18px;
+}
+
+.links {
+    gap: 5px;
 }
 
 #p-cur {
@@ -33,7 +57,6 @@
 }
 
 #p-cur p {
-    background-color: blueviolet;
     margin:0;
     line-height: 2.2;
 }
@@ -53,4 +76,118 @@
 
 #friends .no-padding img {
     padding-bottom: 0;
+}
+
+.add-button {
+    background-color: #D9D9D9;
+    color: black;
+    border: none;
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px;
+    font-family: sans-serif, "Lato";
+    font-size: 16px;
+    max-height: 40px;
+}
+
+#profile-updates button {
+
+    margin-right: 40px;
+}
+
+#profile-updates img {
+    width: 100%;
+    height: auto;
+    max-width: 100px;
+
+}
+.hidden-desktop {
+    display: none;
+    
+}
+
+#mobile-chal {
+    display: block;
+}
+
+#mobile-chal .flex-row-top {
+    justify-content: left;
+    gap: 20px;
+
+}
+
+#mobile-chal h2 {
+    font-size: 20px;
+}
+
+#mobile-friends {
+    display: block;
+}
+
+.center {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 500px;
+    display: block;
+}
+
+@media screen and (max-width: 768px) and (min-width: 481px) {
+    #profile-info {
+        margin-bottom: 20px;
+    }
+    .main-info {
+        display: block;
+        line-height: 1;
+        gap:0;
+        line-height: .8;
+    }
+
+    #profile-info .flex-row-top {
+        gap:10px;
+        align-items: end;
+    
+    }
+
+    .links h3 {
+
+        font-size: 16px;
+        margin: 0;
+    }
+
+    #links-text {
+        margin-bottom: 35px;
+    }
+
+
+    #mobile-chal {
+        padding-bottom: 40px;
+    }
+    #mobile-chal img {
+        max-width: 125px;
+        max-height: 125px;
+        width: 100%;
+        height: auto;
+    }
+
+    .hidden-desktop .center {
+        display: block;
+        width: 100%;
+    }
+
+
+    #mobile-friends img {
+
+        width: 100%;
+        height: auto;
+        max-width: 100px;
+    }
+    .links {
+        justify-content: left;
+
+    }
+
+
+    .hidden-desktop {
+        display: flex;
+    }
 }
