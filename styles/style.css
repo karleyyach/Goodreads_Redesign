@@ -1,46 +1,8 @@
-
+/*-----General Components-----*/
 body {
     background-color: #F4F1EA;
     font-family: sans-serif, "Lato";
 }
-
-.genre-row {
-    gap:30px;
-}
-.genre {
-    background-color: #6E5942;
-    border-radius: 10px;
-    width: 100%;
-    color: white;
-    font-family: sans, "Merriweather";
-    font-size: 20px;
-    font-weight: bold;
-    border: none;
-    padding: 15px 20px;
-}
-
-.hidden-desktop {
-    display: none;
-
-}
-
-
-
-.padding-80 {
-    padding: 0px 80px 0px 80px;
-}
-
-.padding-default {
-
-
-}
-
-.flex-row-top {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
 
 h1 {
     font-family: sans-serif, "Lato";
@@ -69,6 +31,17 @@ p {
     word-wrap: break-word;
 }
 
+button {
+    background-color: #F4F1EA;
+    color: #927F64;
+    border:1px solid #927F64;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    font-family: sans, "Merriweather";
+    font-size: 14px;
+}
+
 .p-lato {
     font-size: 16px;
     font-family: sans-serif, "Lato";
@@ -80,11 +53,39 @@ p {
     font-family: sans, "Merriweather";
 }
 
+.padding-80 {
+    padding: 0px 80px 0px 80px;
+}
+
+.flex-row-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.hidden-desktop {
+    display: none;
+}
+
+.genre-row {
+    gap:30px;
+}
+
+.genre { /*--alt button--*/
+    background-color: #6E5942;
+    border-radius: 10px;
+    width: 100%;
+    color: white;
+    font-family: sans, "Merriweather";
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    padding: 15px 20px;
+}
+
 .content-gap {
     padding-bottom: 40px;
 }
-
-
 
 /* -----nav----- */ 
 nav {
@@ -170,11 +171,10 @@ a:hover
 }
 
 
-/* -----banner----- */ 
+/* -----Banner----- */ 
 #banner {
     font-size: 18px;
     padding-top: 40px;
-
 }
 
 #banner button {
@@ -187,179 +187,15 @@ a:hover
     border-radius: 0;
 }
 
-/* -----main----- */ 
+
+/* -----Main----- */ 
+/*--Makes up the main component of content on the screen--*/
 #main-body {
     margin: 0 auto;
     max-width: 1100px;
     width: 100%;
     display: block;
 }
-
-/* -----recommended----- */ 
-
-.col-gap {
-
-    max-width: 750px;
-}
-
-
-.content-box {
-    box-shadow: 0 0 5px -2px gray;
-    padding: 10px 10px 10px 10px;
-    overflow: hidden;
-    background-color: white;
-}
-
-.content-box ul {
-    display: flex;
-    flex: 1;
-    flex-direction: row;
-    justify-content:space-between;
-
-    list-style: none;
-    margin: 0;
-    padding: 0;
-
-}
-
-.content-box li{
-    max-width: 140px;
-
-}
-
-
-#rec .content-box {
-    padding: 0;
-    margin: 0;
-    box-shadow: none;
-    
-
-}
-
-.book-list {
-    gap: 10px
-}
-
-.book-info p{
-    margin: 0;
-}
-
-.book-info h2{
-    margin: 0;
-}
-
-.book-info .rating{
-    margin: 0;
-}
-
-
-
-
-.book {
-    max-width: 154px;
-    line-height: 1.6;
-
-}
-
-.book img {
-    width: 100%;
-    height: auto;
-
-}
-
-
-
-.rating {
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
-    align-items: center;
-    margin: 0;
-}
-
-.rating svg {
-    padding-right: 5px;
-    
-}
-
-.rating img {
-    max-width: 22px;
-    max-height: 22px;
-    margin-right: 0;
-}
-
-.rating p {
-    padding-right: 10px;
-}
-
-
-#rec ul {
-    justify-content: space-evenly;
-}
-
-
-/* -----news & interviews----- */ 
-#news-interviews .content-box {
-    gap:10px;
-}
-
-#news-interviews img {
-    max-width: 285px;
-    /*min-width: 150px;*/
-    height:auto;
-
-}
-
-/* -----popular this week----- */ 
-#pop ul {
-    justify-content: space-evenly;
-}
-
-/* -----updates from friends----- */ 
-
-#updates .content-box {
-    gap:10px
-
-}
-
-/* -----currently reading----- */ 
-button {
-    background-color: #F4F1EA;
-    color: #927F64;
-    border:1px solid #927F64;
-    text-align: center;
-    border-radius: 5px;
-    padding: 5px;
-    font-family: sans, "Merriweather";
-    font-size: 14px;
-
-}
-
-#cur p {
-    line-height: 2.2;
-}
-
-#chall-img {
-    width: 100%;
-    height: auto;
-    max-width: 135px;
-}
-
-.progress-bar {
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
-    align-items: center;
-    gap: 5px;
-}
-
-.grid2-text-align {
-    line-height: 0;
-}
-
-/* -----reading challenge----- */ 
-
-
 
 .main-grid {
     display: grid;
@@ -386,7 +222,142 @@ button {
     padding-left: 30px;
 }
 
+/* -----Recommended----- */ 
+.col-gap {
+    max-width: 750px;
+}
 
+.content-box {
+    box-shadow: 0 0 5px -2px gray;
+    padding: 10px 10px 10px 10px;
+    overflow: hidden;
+    background-color: white;
+}
+
+.content-box ul {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content:space-between;
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.content-box li{
+    max-width: 140px;
+}
+
+
+#rec .content-box {
+    padding: 0;
+    margin: 0;
+    box-shadow: none;
+}
+
+#rec ul {
+    justify-content: space-evenly;
+}
+
+.book { /*--Used across other pages and sections--*/
+    max-width: 154px;
+    line-height: 1.6;
+}
+
+.book img {
+    width: 100%;
+    height: auto;
+}
+
+.book-list {
+    gap: 10px
+}
+
+.book-info p{
+    margin: 0;
+}
+
+.book-info h2{
+    margin: 0;
+}
+
+.book-info .rating{
+    margin: 0;
+}
+
+.rating {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    margin: 0;
+}
+
+.rating svg {
+    padding-right: 5px;
+    
+}
+
+.rating img {
+    max-width: 22px;
+    max-height: 22px;
+    margin-right: 0;
+}
+
+.rating p {
+    padding-right: 10px;
+}
+
+
+/* -----News & Interviews----- */ 
+#news-interviews .content-box {
+    gap:10px;
+}
+
+#news-interviews img {
+    max-width: 285px;
+    height:auto;
+}
+
+
+/* -----Popular This Week----- */ 
+#pop ul {
+    justify-content: space-evenly;
+}
+
+
+/* -----Updates From Friends----- */ 
+#updates .content-box {
+    gap:10px
+}
+
+
+/* -----Currently Reading----- */ 
+#cur p {
+    line-height: 2.2;
+}
+
+#chall-img {
+    width: 100%;
+    height: auto;
+    max-width: 135px;
+}
+
+.progress-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    gap: 5px;
+}
+
+.grid2-text-align {
+    line-height: 0;
+}
+
+
+/* -----Reading Challenge----- */ 
 .grid2 img {
     padding-right: 15px;
     min-width: 90px;
@@ -398,6 +369,8 @@ button {
     align-items: start;
 }
 
+
+/*-----Footer-----*/
 #footer {
     box-shadow: 4px 0 5px -2px gray;
     padding: 40px 175px 40px 175px;
@@ -407,12 +380,10 @@ button {
     padding-top: 25px;
 }
 
-
-
-
-
+/*-----Media Break Point-----*/
 @media screen and (max-width: 768px) and (min-width: 481px) {
 
+    /*-----Main Components-----*/
     .center {
         max-width: 768px;
         margin: 0 auto;
@@ -436,6 +407,7 @@ button {
     
     }
 
+    /*-----Top Nav-----*/
     .search {
         width: 100%;
         max-width: 200px;
@@ -445,6 +417,8 @@ button {
         margin-top: 10px;
         margin-bottom: 10px;
     }
+
+    /*-----Media Grid and Sections-----*/
 
     .main-grid {
         display: inline;
@@ -471,6 +445,7 @@ button {
     .content-box {
         width: auto;
         overflow:hidden;
+        margin:0;
 
     }
 
@@ -486,13 +461,13 @@ button {
         font-size: 14px;
     }
 
+
+    /*-----Recommended-----*/
     #rec .content-box {
         padding: 0;
         margin: 0;
         box-shadow: none;
     }
-
-
 
     .content-box ul {
         justify-content: space-between;
@@ -500,6 +475,7 @@ button {
     }
 
 
+    /*-----News & Interviews-----*/
     #news-interviews img {
         max-width: 200px;
     }
@@ -516,6 +492,8 @@ button {
         padding-top: 15px;
     }
 
+
+    /*-----Popular-----*/
     #pop .content-box {
         padding: 0;
         margin: 0;
@@ -526,10 +504,6 @@ button {
         margin-right: 10px;
     }
 
-
-    .content-box {
-        margin: 0;
-    }
 
     #footer {
         padding: 24px;

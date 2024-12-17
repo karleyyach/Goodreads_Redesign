@@ -12,7 +12,6 @@
 
 }
 
-
 #profile-info .flex-row-top {
     gap:20px;
     align-items: end;
@@ -31,6 +30,10 @@
     top: 12px;
 }
 
+#profile-info p {
+    font-size: 18px;
+}
+
 .flex-row-top .stats{
     text-align: center;
     vertical-align: bottom;
@@ -41,12 +44,20 @@
     line-height: 1;
 }
 
-#profile-info p {
-    font-size: 18px;
-}
-
 .links {
     gap: 5px;
+}
+
+.add-button {
+    background-color: #D9D9D9;
+    color: black;
+    border: none;
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px;
+    font-family: sans-serif, "Lato";
+    font-size: 16px;
+    max-height: 40px;
 }
 
 #p-cur {
@@ -76,17 +87,6 @@
     padding-bottom: 0;
 }
 
-.add-button {
-    background-color: #D9D9D9;
-    color: black;
-    border: none;
-    text-align: center;
-    border-radius: 5px;
-    padding: 10px;
-    font-family: sans-serif, "Lato";
-    font-size: 16px;
-    max-height: 40px;
-}
 
 #profile-updates button {
 
@@ -99,6 +99,7 @@
     max-width: 100px;
 
 }
+
 .hidden-desktop {
     display: none;
     
@@ -122,12 +123,6 @@
     display: block;
 }
 
-.center {
-    margin: 0 auto;
-    width: 100%;
-    max-width: 500px;
-    display: block;
-}
 
 @media screen and (max-width: 768px) and (min-width: 481px) {
     #profile-info {
@@ -146,6 +141,11 @@
     
     }
 
+    .links {
+        justify-content: left;
+
+    }
+
     .links h3 {
 
         font-size: 16px;
@@ -160,6 +160,7 @@
     #mobile-chal {
         padding-bottom: 40px;
     }
+
     #mobile-chal img {
         max-width: 125px;
         max-height: 125px;
@@ -172,18 +173,12 @@
         width: 100%;
     }
 
-
     #mobile-friends img {
 
         width: 100%;
         height: auto;
         max-width: 100px;
     }
-    .links {
-        justify-content: left;
-
-    }
-
 
     .hidden-desktop {
         display: flex;
